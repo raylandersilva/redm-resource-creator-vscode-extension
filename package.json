@@ -1,0 +1,40 @@
+{
+  "name": "redm-resource-creator",
+  "displayName": "RedM Resource Creator",
+  "description": "VS Code extension to create RedM resource folder structure",
+  "version": "1.0.0",
+  "publisher": "Raylander",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raylandersilva/redm-resource-creator-vscode-extension.git"
+  },
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:redm-resource-creator.createResource"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "redm-resource-creator.createResource",
+        "title": "Create RedM Resource Structure"
+      }
+    ]
+  },
+  "icon": "icon.png",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/vscode": "^1.100.0"
+  }
+}
